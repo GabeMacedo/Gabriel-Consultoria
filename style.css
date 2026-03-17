@@ -10,7 +10,7 @@
   --soft: #8a8a8a;
 
   --border: rgba(255, 255, 255, 0.1);
-  --border-strong: rgba(255, 255, 255, 0.2);
+  --border-strong: rgba(255, 255, 255, 0.22);
 
   --shadow: 0 22px 60px rgba(0, 0, 0, 0.42);
   --shadow-strong: 0 28px 80px rgba(0, 0, 0, 0.56);
@@ -76,34 +76,35 @@ section {
 
 /* HEADER */
 .topbar {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: rgba(5, 5, 5, 0.8);
-  border-bottom: 1px solid var(--border);
-  backdrop-filter: blur(14px);
+  position: relative;
+  padding: 16px 0 8px;
+  background: transparent;
+  border-bottom: none;
 }
 
 .topbar-inner {
-  min-height: 78px;
+  min-height: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: var(--space-3);
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
 }
 
-.logo-header {
-  width: 160px;
+.logo-header,
+.logo-banner {
+  width: min(420px, 78vw);
   height: auto;
+  margin: 0 auto;
 }
 
 .nav {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 24px;
   color: var(--muted);
@@ -169,13 +170,13 @@ section {
 
 /* HERO */
 .hero {
-  padding: 52px 0 var(--space-6);
+  padding: 8px 0 var(--space-6);
 }
 
 .hero-card {
   position: relative;
   overflow: hidden;
-  padding: var(--space-8) var(--space-5);
+  padding: 38px var(--space-5) var(--space-8);
   border: 1px solid var(--border);
   border-radius: var(--radius-xl);
   background: linear-gradient(
@@ -212,9 +213,7 @@ section {
 }
 
 .hero-logo {
-  width: 250px;
-  margin: 0 auto 24px;
-  filter: drop-shadow(0 14px 30px rgba(255, 255, 255, 0.06));
+  display: none;
 }
 
 .eyebrow {
@@ -259,6 +258,7 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
+  margin-top: var(--space-4);
 }
 
 .hero-points span {
@@ -834,17 +834,39 @@ section {
 }
 
 /* RESPONSIVE */
+@media (min-width: 981px) {
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(5, 5, 5, 0.72);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(14px);
+  }
+
+  .topbar-inner {
+    min-height: 78px;
+    justify-content: space-between;
+  }
+
+  .logo-header,
+  .logo-banner {
+    width: 180px;
+    margin: 0;
+  }
+
+  .nav {
+    display: flex;
+  }
+}
+
 @media (max-width: 980px) {
   section {
     padding: 52px 0;
   }
 
-  .nav {
-    display: none;
-  }
-
   .hero-card {
-    padding: 58px 24px;
+    padding: 48px 24px 58px;
   }
 
   .benefits-grid,
@@ -876,21 +898,21 @@ section {
     width: min(calc(100% - 22px), var(--container));
   }
 
-  .logo-header {
-    width: 138px;
+  .topbar {
+    padding: 12px 0 4px;
+  }
+
+  .logo-header,
+  .logo-banner {
+    width: min(320px, 86vw);
   }
 
   .hero {
-    padding-top: 26px;
-  }
-
-  .hero-logo {
-    width: 205px;
-    margin-bottom: 18px;
+    padding-top: 6px;
   }
 
   .hero-card {
-    padding: 42px 18px;
+    padding: 28px 18px 42px;
     border-radius: 28px;
   }
 
