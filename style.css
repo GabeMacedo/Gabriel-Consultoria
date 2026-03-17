@@ -3,11 +3,15 @@
   --bg-soft: #0b0b0b;
   --surface: rgba(255, 255, 255, 0.04);
   --surface-strong: rgba(255, 255, 255, 0.07);
+  --surface-hover: rgba(255, 255, 255, 0.09);
+
   --text: #ffffff;
   --muted: #b8b8b8;
   --soft: #8a8a8a;
+
   --border: rgba(255, 255, 255, 0.1);
   --border-strong: rgba(255, 255, 255, 0.2);
+
   --shadow: 0 22px 60px rgba(0, 0, 0, 0.42);
   --shadow-strong: 0 28px 80px rgba(0, 0, 0, 0.56);
 
@@ -75,7 +79,7 @@ section {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(5, 5, 5, 0.78);
+  background: rgba(5, 5, 5, 0.8);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(14px);
 }
@@ -130,7 +134,7 @@ section {
   width: 100%;
 }
 
-/* SECTION HEADER */
+/* SECTION HEAD */
 .section-head {
   max-width: 820px;
   margin: 0 auto var(--space-6);
@@ -555,7 +559,13 @@ section {
 .reviews-track {
   display: flex;
   width: 1000%;
-  animation: reviewSlider 45s infinite;
+  animation: reviewSlider 110s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.reviews-slider:hover .reviews-track,
+.reviews-slider:active .reviews-track {
+  animation-play-state: paused;
 }
 
 .review-slide {
@@ -600,34 +610,34 @@ section {
 
 @keyframes reviewSlider {
   0% { transform: translateX(0%); }
-  8% { transform: translateX(0%); }
+  9% { transform: translateX(0%); }
 
   10% { transform: translateX(-100%); }
-  18% { transform: translateX(-100%); }
+  19% { transform: translateX(-100%); }
 
   20% { transform: translateX(-200%); }
-  28% { transform: translateX(-200%); }
+  29% { transform: translateX(-200%); }
 
   30% { transform: translateX(-300%); }
-  38% { transform: translateX(-300%); }
+  39% { transform: translateX(-300%); }
 
   40% { transform: translateX(-400%); }
-  48% { transform: translateX(-400%); }
+  49% { transform: translateX(-400%); }
 
   50% { transform: translateX(-500%); }
-  58% { transform: translateX(-500%); }
+  59% { transform: translateX(-500%); }
 
   60% { transform: translateX(-600%); }
-  68% { transform: translateX(-600%); }
+  69% { transform: translateX(-600%); }
 
   70% { transform: translateX(-700%); }
-  78% { transform: translateX(-700%); }
+  79% { transform: translateX(-700%); }
 
   80% { transform: translateX(-800%); }
-  88% { transform: translateX(-800%); }
+  89% { transform: translateX(-800%); }
 
   90% { transform: translateX(-900%); }
-  98% { transform: translateX(-900%); }
+  99% { transform: translateX(-900%); }
 
   100% { transform: translateX(0%); }
 }
@@ -865,6 +875,11 @@ section {
   .review-slide .review-text {
     font-size: 0.96rem;
     line-height: 1.65;
+  }
+
+  .reviews-track {
+    animation: reviewSlider 130s infinite;
+    animation-timing-function: ease-in-out;
   }
 
   .faq-item summary {
