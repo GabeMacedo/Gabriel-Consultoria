@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino de Peito - Isaac</title>
+    <style>
+        /* Reset simples */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
 
+        body {
+            background-color: #121212;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #ff3b30;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-bottom: 3px;
+        }
+
+        .exercise-card {
+            background: #1e1e1e;
+            border-radius: 12px;
+            margin: 15px 0;
+            padding: 15px;
+            text-align: left;
+            overflow: hidden;
+        }
+
+        .exercise-card img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+
+        .exercise-info h2 {
+            font-size: 1.2rem;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .exercise-info p {
+            font-size: 0.9rem;
+            color: #aaa;
+            margin-bottom: 5px;
+        }
+
+        .exercise-info .section-title {
+            color: #ff3b30;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        button {
+            padding: 15px 30px;
+            background: #ff3b30;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #e02a20;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho enxuto com informações do aluno -->
+    <header>
+        <h1>Treino de Peito</h1>
+        <p>Isaac, 18 anos | 1,85 m | 61 kg</p>
+        <p>Objetivo: Ficar grande | Nível: Intermediário | 4x/semana</p>
+    </header>
+
+    <main>
+        <!-- Exercício: Supino Reto com Barra -->
+        <section class="exercise-card">
+            <img src="supino-reto.jpg" alt="Supino Reto com Barra">
+            <div class="exercise-info">
+                <h2>Supino Reto com Barra</h2>
+
+                <p class="section-title">Posição:</p>
+                <p>Deite-se no banco reto, pés firmes no chão, mãos na barra na largura dos ombros.</p>
+
+                <p class="section-title">Execução:</p>
+                <p>Abaixe a barra lentamente até a região inferior do peito, mantendo os cotovelos em 45° do corpo. Empurre a barra de forma explosiva até a extensão total dos braços.</p>
+
+                <p class="section-title">Dica:</p>
+                <p>Evite arquear excessivamente as costas; controle a descida, mantenha o peito estufado e ombros relaxados.</p>
+
+                <p class="section-title">Músculos:</p>
+                <p>Peitoral, deltoide anterior, tríceps</p>
+            </div>
+        </section>
+
+        <!-- Você pode duplicar este card para outros exercícios -->
+        <!-- Exemplo card para outro exercício:
+        <section class="exercise-card">
+            <img src="supino-inclinado.jpg" alt="Supino Inclinado">
+            <div class="exercise-info">
+                <h2>Supino Inclinado com Halteres</h2>
+                <p class="section-title">Posição:</p>
+                <p>...</p>
+                <p class="section-title">Execução:</p>
+                <p>...</p>
+            </div>
+        </section>
+        -->
+
+    </main>
+
+    <footer>
+        <button>Voltar</button>
+    </footer>
+</body>
+</html>
