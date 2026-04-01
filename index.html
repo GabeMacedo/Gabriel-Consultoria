@@ -1,85 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treino de Peito - Isaac</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treino de Peito - Isaac</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Cabeçalho enxuto -->
-        <header>
-            <h1>Treino de Peito</h1>
-            <p class="subtitulo">Isaac, 18 anos | 1,85 m | 61 kg</p>
-            <p class="subtitulo">Objetivo: Ficar grande | Nível: Intermediário | 4x/semana</p>
-        </header>
+  <div class="container">
+    <header>
+      <h1>Treino de Peito</h1>
+      <p class="subtitulo">Isaac, 18 anos | 1,85 m | 61 kg</p>
+      <p class="subtitulo">Objetivo: Ficar grande | Nível: Intermediário | 4x/semana</p>
+    </header>
 
-        <main>
-            <!-- Exercício 1: Supino Reto -->
-            <section class="exercise-card">
-                <img src="supino-reto.jpg" alt="Supino Reto com Barra">
-                <div class="exercise-info">
-                    <h2>Supino Reto com Barra</h2>
-                    <p class="section-title">Posição:</p>
-                    <p>Deite-se no banco reto, pés firmes no chão, mãos na barra na largura dos ombros.</p>
-                    <p class="section-title">Execução:</p>
-                    <p>Abaixe a barra lentamente até a região inferior do peito, mantendo os cotovelos em 45° do corpo. Empurre a barra de forma explosiva até a extensão total dos braços.</p>
-                    <p class="section-title">Dica:</p>
-                    <p>Evite arquear excessivamente as costas; controle a descida, mantenha o peito estufado e ombros relaxados.</p>
-                    <p class="section-title">Músculos:</p>
-                    <p>Peitoral, deltoide anterior, tríceps</p>
-                </div>
-            </section>
+    <main>
+      <!-- Abas -->
+      <div class="tabs">
+        <button class="tab-btn active" onclick="showExercise(0)">Supino Reto</button>
+        <button class="tab-btn" onclick="showExercise(1)">Supino Inclinado</button>
+        <button class="tab-btn" onclick="showExercise(2)">Crossover</button>
+        <button class="tab-btn" onclick="showExercise(3)">Crossover Baixo</button>
+      </div>
 
-            <!-- Exercício 2: Supino Inclinado com Halteres -->
-            <section class="exercise-card">
-                <img src="supino-inclinado.jpg" alt="Supino Inclinado com Halteres">
-                <div class="exercise-info">
-                    <h2>Supino Inclinado com Halteres</h2>
-                    <p class="section-title">Posição:</p>
-                    <p>Sente-se no banco inclinado, pés firmes, segure os halteres ao lado do peito.</p>
-                    <p class="section-title">Execução:</p>
-                    <p>Empurre os halteres para cima até extensão total dos braços e desça controladamente até a altura do peito.</p>
-                    <p class="section-title">Dica:</p>
-                    <p>Mantenha ombros para baixo e peito estufado, evitando balanço do corpo.</p>
-                    <p class="section-title">Músculos:</p>
-                    <p>Peitoral superior, deltoide anterior, tríceps</p>
-                </div>
-            </section>
+      <!-- Exercícios -->
+      <section class="exercise-card active">
+        <img src="supino-reto.jpg" alt="Supino Reto">
+        <h2>Supino Reto com Barra</h2>
+        <p class="section-title">Posição:</p>
+        <p>Deite-se no banco reto, pés firmes no chão, mãos na barra na largura dos ombros.</p>
+        <p class="section-title">Execução:</p>
+        <p>Abaixe a barra lentamente até a região inferior do peito, mantendo os cotovelos em 45° do corpo. Empurre a barra de forma explosiva até a extensão total dos braços.</p>
+        <p class="section-title">Dica:</p>
+        <p>Evite arquear excessivamente as costas; controle a descida, mantenha o peito estufado e ombros relaxados.</p>
+        <p class="section-title">Músculos:</p>
+        <p>Peitoral, deltoide anterior, tríceps</p>
+      </section>
 
-            <!-- Exercício 3: Crossover (pulley) -->
-            <section class="exercise-card">
-                <img src="crossover.jpg" alt="Crossover">
-                <div class="exercise-info">
-                    <h2>Crossover</h2>
-                    <p class="section-title">Posição:</p>
-                    <p>Segure as alças, braços abertos em cruz, leve um pé à frente para estabilidade.</p>
-                    <p class="section-title">Execução:</p>
-                    <p>Feche os braços à frente do corpo, mantendo ligeira flexão nos cotovelos, e volte controladamente.</p>
-                    <p class="section-title">Dica:</p>
-                    <p>Mantenha o tronco firme, concentre-se na contração do peitoral.</p>
-                    <p class="section-title">Músculos:</p>
-                    <p>Peitoral, deltoide anterior</p>
-                </div>
-            </section>
+      <section class="exercise-card">
+        <img src="supino-inclinado.jpg" alt="Supino Inclinado">
+        <h2>Supino Inclinado com Halteres</h2>
+        <p class="section-title">Posição:</p>
+        <p>Sente-se no banco inclinado, pés firmes, segure os halteres ao lado do peito.</p>
+        <p class="section-title">Execução:</p>
+        <p>Empurre os halteres para cima até extensão total dos braços e desça controladamente até a altura do peito.</p>
+        <p class="section-title">Dica:</p>
+        <p>Mantenha ombros para baixo e peito estufado, evitando balanço do corpo.</p>
+        <p class="section-title">Músculos:</p>
+        <p>Peitoral superior, deltoide anterior, tríceps</p>
+      </section>
 
-            <!-- Exercício 4: Crossover baixo (pulley baixo) -->
-            <section class="exercise-card">
-                <img src="crossover-baixo.jpg" alt="Crossover Baixo">
-                <div class="exercise-info">
-                    <h2>Crossover Baixo</h2>
-                    <p class="section-title">Posição:</p>
-                    <p>Segure as alças na posição baixa, braços abertos, tronco levemente inclinado à frente.</p>
-                    <p class="section-title">Execução:</p>
-                    <p>Suba os braços em diagonal até frente do peito, mantendo cotovelos levemente flexionados.</p>
-                    <p class="section-title">Dica:</p>
-                    <p>Concentre-se na contração do peitoral inferior; movimento controlado.</p>
-                    <p class="section-title">Músculos:</p>
-                    <p>Peitoral inferior, deltoide anterior</p>
-                </div>
-            </section>
-        </main>
-    </div>
+      <section class="exercise-card">
+        <img src="crossover.jpg" alt="Crossover">
+        <h2>Crossover</h2>
+        <p class="section-title">Posição:</p>
+        <p>Segure as alças, braços abertos em cruz, leve um pé à frente para estabilidade.</p>
+        <p class="section-title">Execução:</p>
+        <p>Feche os braços à frente do corpo, mantendo ligeira flexão nos cotovelos, e volte controladamente.</p>
+        <p class="section-title">Dica:</p>
+        <p>Mantenha o tronco firme, concentre-se na contração do peitoral.</p>
+        <p class="section-title">Músculos:</p>
+        <p>Peitoral, deltoide anterior</p>
+      </section>
+
+      <section class="exercise-card">
+        <img src="crossover-baixo.jpg" alt="Crossover Baixo">
+        <h2>Crossover Baixo</h2>
+        <p class="section-title">Posição:</p>
+        <p>Segure as alças na posição baixa, braços abertos, tronco levemente inclinado à frente.</p>
+        <p class="section-title">Execução:</p>
+        <p>Suba os braços em diagonal até frente do peito, mantendo cotovelos levemente flexionados.</p>
+        <p class="section-title">Dica:</p>
+        <p>Concentre-se na contração do peitoral inferior; movimento controlado.</p>
+        <p class="section-title">Músculos:</p>
+        <p>Peitoral inferior, deltoide anterior</p>
+      </section>
+
+    </main>
+  </div>
+
+  <script>
+    const exercises = document.querySelectorAll('.exercise-card');
+    const tabs = document.querySelectorAll('.tab-btn');
+
+    function showExercise(index) {
+      exercises.forEach((ex, i) => ex.classList.toggle('active', i === index));
+      tabs.forEach((tab, i) => tab.classList.toggle('active', i === index));
+    }
+  </script>
 </body>
 </html>
