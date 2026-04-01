@@ -3,41 +3,51 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
 }
 
 body {
-    background-color: #121212;
+    background: linear-gradient(180deg, #050505 0%, #0a0a0f 100%);
     color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.container {
+    max-width: 420px;
+    width: 100%;
+    padding: 0 16px;
+}
+
+header {
     text-align: center;
-    padding: 15px;
+    margin-bottom: 30px;
 }
 
 header h1 {
     font-size: 2rem;
-    color: #ff3b30;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
-header p {
+.subtitulo {
     font-size: 0.9rem;
-    color: #ccc;
-    margin-bottom: 3px;
+    color: #aaa;
+    margin-bottom: 4px;
 }
 
 .exercise-card {
     background: #1e1e1e;
     border-radius: 12px;
-    margin: 15px 0;
-    padding: 15px;
-    text-align: left;
+    margin-bottom: 20px;
+    padding: 16px;
     overflow: hidden;
 }
 
 .exercise-card img {
     width: 100%;
     border-radius: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .exercise-info h2 {
@@ -48,32 +58,12 @@ header p {
 
 .exercise-info p {
     font-size: 0.9rem;
-    color: #aaa;
-    margin-bottom: 5px;
+    color: #ccc;
+    margin-bottom: 6px;
 }
 
 .exercise-info .section-title {
     color: #ff3b30;
     font-weight: bold;
     margin-top: 8px;
-}
-
-footer {
-    margin-top: 20px;
-    text-align: center;
-}
-
-button {
-    padding: 15px 30px;
-    background: #ff3b30;
-    border: none;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background: #e02a20;
 }
