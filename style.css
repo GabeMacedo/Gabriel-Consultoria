@@ -1,69 +1,97 @@
 /* Reset simples */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
 }
 
 body {
-    background: linear-gradient(180deg, #050505 0%, #0a0a0f 100%);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    padding-top: 40px;
+  background: linear-gradient(180deg, #050505 0%, #0a0a0f 100%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
 }
 
 .container {
-    max-width: 420px;
-    width: 100%;
-    padding: 0 16px;
+  max-width: 420px;
+  width: 100%;
+  padding: 0 16px;
 }
 
 header {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 header h1 {
-    font-size: 1.8rem;
-    margin-bottom: 6px;
+  font-size: 1.8rem;
+  margin-bottom: 6px;
 }
 
 .subtitulo {
-    font-size: 0.85rem;
-    color: #aaa;
-    margin-bottom: 2px;
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-bottom: 2px;
 }
 
+/* Abas */
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.tab-btn {
+  background: transparent;
+  border: none;
+  color: #888;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 6px;
+  flex: 1;
+  transition: 0.2s;
+}
+
+.tab-btn.active {
+  color: #ff3b30;
+  font-weight: bold;
+}
+
+/* Cards de exercício */
 .exercise-card {
-    background: #1e1e1e;
-    border-radius: 12px;
-    margin-bottom: 15px;
-    padding: 12px;
-    text-align: left;
+  display: none;
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: left;
+}
+
+.exercise-card.active {
+  display: block;
 }
 
 .exercise-card img {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 10px;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
 }
 
 .exercise-info h2 {
-    font-size: 1.1rem;
-    color: #fff;
-    margin-bottom: 6px;
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 6px;
 }
 
 .exercise-info p {
-    font-size: 0.85rem;
-    color: #ccc;
-    margin-bottom: 4px;
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-bottom: 4px;
 }
 
 .exercise-info .section-title {
-    color: #ff3b30;
-    font-weight: bold;
-    margin-top: 6px;
+  color: #ff3b30;
+  font-weight: bold;
+  margin-top: 6px;
 }
